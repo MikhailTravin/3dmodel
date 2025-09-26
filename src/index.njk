@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная страница</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			<div data-watch="navigator" class="block-intro">
+				<div class="container">
+					<div class="block-intro__content">
+						<div class="block-intro__body">
+							<h1 class="title1">3D моделирование</h1>
+							<ul>
+								<li>
+									<img src="img/icon/check.svg" alt="">
+									<span>Сканирование</span>
+								</li>
+								<li>
+									<img src="img/icon/check.svg" alt="">
+									<span>Редактирование</span>
+								</li>
+								<li>
+									<img src="img/icon/check.svg" alt="">
+									<span>Печать</span>
+								</li>
+							</ul>
+							<p>
+								Превратите ваши сломаны вещи и детали в безупречные цифровые копииили новые яркие
+								отпечатки. Профессиональное оборудованиеи внимание к каждой детали.
+							</p>
+							<a href="#" class="btn">
+								<span>Позвонить</span>
+							</a>
+						</div>
+						<div class="block-intro__image">
+							<img src="img/bg1.webp" alt="" class="block-intro__bg">
+							<img src="img/image1.webp" alt="" class="block-intro__pic">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div data-watch="navigator" class="block-benefits1 block1">
+				<div class="container">
+					<div class="block-benefits1__body">
+						<div class="block-benefits1__column">
+							<div class="block-benefits1__image">
+								<img loading="lazy" src="img/bg2.webp" alt="" class="block-benefits1__bg">
+								<img loading="lazy" src="img/icon/icon1.svg" alt="" class="block-benefits1__icon">
+							</div>
+							<div class="block-benefits1__item">
+								<div class="title4">
+									Высокое разрешение<br> печати и детализация
+								</div>
+							</div>
+						</div>
+						<div class="block-benefits1__column">
+							<div class="block-benefits1__image">
+								<img loading="lazy" src="img/bg2.webp" alt="" class="block-benefits1__bg">
+								<img loading="lazy" src="img/icon/icon2.svg" alt="" class="block-benefits1__icon">
+							</div>
+							<div class="block-benefits1__item">
+								<div class="title4">
+									Создание и восстановление повреждений деталей
+								</div>
+							</div>
+						</div>
+						<div class="block-benefits1__column">
+							<div class="block-benefits1__image">
+								<img loading="lazy" src="img/bg2.webp" alt="" class="block-benefits1__bg">
+								<img loading="lazy" src="img/icon/icon3.svg" alt="" class="block-benefits1__icon">
+							</div>
+							<div class="block-benefits1__item">
+								<div class="title4">
+									Печать на пластике<br>
+									премиум-класса
+								</div>
+							</div>
+						</div>
+						<div class="block-benefits1__column">
+							<div class="block-benefits1__image">
+								<img loading="lazy" src="img/bg2.webp" alt="" class="block-benefits1__bg">
+								<img loading="lazy" src="img/icon/icon4.svg" alt="" class="block-benefits1__icon">
+							</div>
+							<div class="block-benefits1__item">
+								<div class="title4">
+									Срочный заказ<br> за 24 часа
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div data-watch="navigator" class="block-benefits2 block1">
+				<div class="container">
+					<div class="block-benefits2__body">
+						<div class="card">
+							<div class="card__image">
+								<img loading="lazy" src="img/image2.webp" alt="">
+							</div>
+							<div class="card__item">
+								<div class="title4">
+									Технологии
+								</div>
+								<p>
+									Профессиональные планшетные и пленочные сканеры. Не повреждаем ваши оригиналы.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__image">
+								<img loading="lazy" src="img/image3.webp" alt="">
+							</div>
+							<div class="card__item">
+								<div class="title4">
+									Экспертиза
+								</div>
+								<p>
+									Опытные 3 модельеры удалят царапины,пыль, выправят цвет и контраст. Создадут новые
+									детали
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__image">
+								<img loading="lazy" src="img/image4.webp" alt="">
+							</div>
+							<div class="card__item">
+								<div class="title4">
+									Качество печати
+								</div>
+								<p>
+									Современные принтеры и качественные материалы, которые не выцветают десятилетиями.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__image">
+								<img loading="lazy" src="img/image5.webp" alt="">
+							</div>
+							<div class="card__item">
+								<div class="title4">
+									Конфиденциальность
+								</div>
+								<p>
+									Ваши детали и документы в безопасности. Не показываем и не передаем
+									третьим лицам.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div data-watch="navigator" class="block-services block1">
+				<div class="container">
+					<h2 class="title2">Наши услуги</h2>
+					<div data-tabs class="tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active"><span>Сканирование</span></button>
+							<button type="button" class="tabs__title"><span>Редактирование</span></button>
+							<button type="button" class="tabs__title"><span>Печать</span></button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="tabs__cards">
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__cards">
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование2
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__cards">
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование3
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card__image">
+											<img loading="lazy" src="img/image6.webp" alt="">
+										</div>
+										<div class="card__item">
+											<div class="title4">
+												3Д сканирование
+											</div>
+											<p>
+												С высокой эффективностью и точностью получает 3D модели изделий даже с
+												очень сложной геометрией
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div data-watch="navigator" class="block-gallery block1">
+				<div class="container">
+					<h2 class="title2">Наши работы</h2>
+					<div class="block-gallery__body">
+						<a href="img/works/image1.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image1.webp" alt="">
+						</a>
+						<a href="img/works/image2.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image2.webp" alt="">
+						</a>
+						<a href="img/works/image3.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image3.webp" alt="">
+						</a>
+						<a href="img/works/image4.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image4.webp" alt="">
+						</a>
+						<a href="img/works/image5.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image5.webp" alt="">
+						</a>
+						<a href="img/works/image6.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image6.webp" alt="">
+						</a>
+						<a href="img/works/image7.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image7.webp" alt="">
+						</a>
+						<a href="img/works/image8.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image8.webp" alt="">
+						</a>
+						<a href="img/works/image9.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image9.webp" alt="">
+						</a>
+						<a href="img/works/image10.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image10.webp" alt="">
+						</a>
+						<a href="img/works/image11.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image11.webp" alt="">
+						</a>
+						<a href="img/works/image12.webp" data-fancybox="gallery1">
+							<img loading="lazy" src="img/works/image12.webp" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div data-watch="navigator" class="block-steps block1">
+				<div class="container">
+					<h2 class="title2">Этапы работы</h2>
+					<div class="block-steps__body">
+						<div class="card">
+							<img loading="lazy" src="img/bg2.webp" alt="">
+							<div class="card__image">
+								<img loading="lazy" src="img/icon/01.svg" alt="">
+							</div>
+							<div class="card__item">
+								<div class="title4">
+									Заявка
+								</div>
+								<p>
+									Оставляете заявку на сайте илиприезжаете к нам.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<img loading="lazy" src="img/bg2.webp" alt="">
+							<div class="card__image">
+								<img loading="lazy" src="img/icon/02.svg" alt="">
+							</div>
+							<div class="card__item">
+								<div class="title4">
+									Оценка
+								</div>
+								<p>
+									Бесплатно оцениваем объеми сложность работы.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<img loading="lazy" src="img/bg2.webp" alt="">
+							<div class="card__image">
+								<img loading="lazy" src="img/icon/03.svg" alt="">
+							</div>
+							<div class="card__item">
+								<div class="title4">
+									Выполнение
+								</div>
+								<p>
+									Сканируем, редактируемили печатаем
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<img loading="lazy" src="img/bg2.webp" alt="">
+							<div class="card__image">
+								<img loading="lazy" src="img/icon/04.svg" alt="">
+							</div>
+							<div class="card__item">
+								<div class="title4">
+									Результат
+								</div>
+								<p>
+									Вы получаете идеальный результат
+									удобным способом
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div data-watch="navigator" class="block-reviews block1">
+				<div class="container">
+					<h2 class="title2">
+						Что говорят наши клиенты
+					</h2>
+					<div class="block-reviews__content">
+						<div class="block-reviews__slider swiper">
+							<div class="block-reviews__wrapper swiper-wrapper">
+								<div class="block-reviews__slide swiper-slide">
+									<div class="block-reviews__item">
+										<img loading="lazy" src="img/avatar1.webp" alt="" class="block-reviews__pic">
+										<div class="title4">Майкл Джексон</div>
+										<p>
+											Значимость этих проблем настолько очевидна, что дальнейшее развитие
+											различных
+											форм деятельности требуют определения и уточнения дальнейших направлений
+											развития.
+										</p>
+									</div>
+								</div>
+								<div class="block-reviews__slide swiper-slide">
+									<div class="block-reviews__item">
+										<img loading="lazy" src="img/avatar1.webp" alt="" class="block-reviews__pic">
+										<div class="title4">Майкл Джексон</div>
+										<p>
+											Значимость этих проблем настолько очевидна, что дальнейшее развитие
+											различных
+											форм деятельности требуют определения и уточнения дальнейших направлений
+											развития.
+										</p>
+									</div>
+								</div>
+								<div class="block-reviews__slide swiper-slide">
+									<div class="block-reviews__item">
+										<img loading="lazy" src="img/avatar1.webp" alt="" class="block-reviews__pic">
+										<div class="title4">Майкл Джексон</div>
+										<p>
+											Значимость этих проблем настолько очевидна, что дальнейшее развитие
+											различных
+											форм деятельности требуют определения и уточнения дальнейших направлений
+											развития.
+										</p>
+									</div>
+								</div>
+								<div class="block-reviews__slide swiper-slide">
+									<div class="block-reviews__item">
+										<img loading="lazy" src="img/avatar1.webp" alt="" class="block-reviews__pic">
+										<div class="title4">Майкл Джексон</div>
+										<p>
+											Значимость этих проблем настолько очевидна, что дальнейшее развитие
+											различных
+											форм деятельности требуют определения и уточнения дальнейших направлений
+											развития.
+										</p>
+									</div>
+								</div>
+								<div class="block-reviews__slide swiper-slide">
+									<div class="block-reviews__item">
+										<img loading="lazy" src="img/avatar1.webp" alt="" class="block-reviews__pic">
+										<div class="title4">Майкл Джексон</div>
+										<p>
+											Значимость этих проблем настолько очевидна, что дальнейшее развитие
+											различных
+											форм деятельности требуют определения и уточнения дальнейших направлений
+											развития.
+										</p>
+									</div>
+								</div>
+								<div class="block-reviews__slide swiper-slide">
+									<div class="block-reviews__item">
+										<img loading="lazy" src="img/avatar1.webp" alt="" class="block-reviews__pic">
+										<div class="title4">Майкл Джексон</div>
+										<p>
+											Значимость этих проблем настолько очевидна, что дальнейшее развитие
+											различных
+											форм деятельности требуют определения и уточнения дальнейших направлений
+											развития.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block-reviews__navs">
+							<div class="block-reviews__arrow-prev">
+								<img loading="lazy" src="img/icon/arrow1.svg" alt="">
+							</div>
+							<div class="block-reviews__pagination"></div>
+							<div class="block-reviews__arrow-next">
+								<img loading="lazy" src="img/icon/arrow1.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div data-watch="navigator" class="block-questions block1">
+				<div class="container">
+					<h2 class="title2">Частые вопросы</h2>
+					<div data-spollers class="spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">
+								<span>Сколько времени занимает сканирование 100 фото?</span>
+								<span class="spollers__arrow">
+									<img loading="lazy" src="img/icon/arrow1.svg" alt="">
+								</span>
+							</button>
+							<div class="spollers__body">
+								<p>
+									Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+									деятельности требуют определения и уточнения дальнейших направлений развития.
+								</p>
+							</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">
+								<span>Можно ли восстановить полностью порванную фотографию?</span>
+								<span class="spollers__arrow">
+									<img loading="lazy" src="img/icon/arrow1.svg" alt="">
+								</span>
+							</button>
+							<div class="spollers__body">
+								<p>
+									Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+									деятельности требуют определения и уточнения дальнейших направлений развития.
+								</p>
+							</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">
+								<span>Можно ли восстановить полностью порванную фотографию?</span>
+								<span class="spollers__arrow">
+									<img loading="lazy" src="img/icon/arrow1.svg" alt="">
+								</span>
+							</button>
+							<div class="spollers__body">
+								<p>
+									Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+									деятельности требуют определения и уточнения дальнейших направлений развития.
+								</p>
+							</div>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">
+								<span>Можно ли восстановить полностью порванную фотографию?</span>
+								<span class="spollers__arrow">
+									<img loading="lazy" src="img/icon/arrow1.svg" alt="">
+								</span>
+							</button>
+							<div class="spollers__body">
+								<p>
+									Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+									деятельности требуют определения и уточнения дальнейших направлений развития.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-contacts block1">
+				<img src="img/bg1.webp" alt="" class="block-contacts__bg">
+				<div class="container">
+					<div class="block-contacts__content">
+						<div class="block-contacts__body">
+							<h2 class="title1">
+								Готовы превратить
+								воспоминания в нечто
+								совершенное?
+							</h2>
+							<div class="phone">
+								<a href="tel:88000000000">8 800 000 00 00</a>
+								<span>Звонок бесплатный по РФ</span>
+							</div>
+							<div class="socials">
+								<a href="#">
+									<img loading="lazy" src="img/icon/telegram.svg" alt="">
+								</a>
+								<a href="#">
+									<img loading="lazy" src="img/icon/vk.svg" alt="">
+								</a>
+								<a href="#">
+									<img loading="lazy" src="img/icon/whatsapp.svg" alt="">
+								</a>
+							</div>
+							<a href="#" class="btn">
+								<span>Позвонить</span>
+							</a>
+						</div>
+						<div class="block-contacts__image">
+							<img loading="lazy" src="img/image7.webp" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
